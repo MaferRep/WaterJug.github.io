@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Jug Problem Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3995/3995673.png" type="image/png">
+</head>
+<body>
+    
+    <!-- main container -->
+
+    <div class="container">
+        <h1>Water Jug Problem Solver</h1>
+        <form id="waterJugForm">
+            <label for="x">Capacity of Jug A (x):</label>
+            <input type="number" id="x" name="x" min="1" required>
+            
+            <label for="y">Capacity of Jug B (y):</label>
+            <input type="number" id="y" name="y" min="1" required>
+            
+            <label for="z">Amount of water to measure (z):</label>
+            <input type="number" id="z" name="z" min="1" required>
+            
+            <button type="submit">Solve</button>
+        </form>
+
+        <!-- Jugs -->
+        <div class="jug-container">
+            <div id="jugA" class="jug">
+                <div class="water"></div>
+            </div>
+            <div id="jugB" class="jug">
+                <div class="water"></div>
+            </div>
+        </div>
+
+        <!-- results -->
+        <div id="result"></div>
+
+    </div>
+
+<!-- solid waves -->
+
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+</div>
+
+<!-- effects waves -->
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#wave" x="48" y="0" fill="rgba(0, 102, 204, 0.7)" /> 
+        <use xlink:href="#wave" x="48" y="3" fill="rgba(51, 153, 255, 0.5)" />
+        <use xlink:href="#wave" x="48" y="5" fill="rgba(102, 178, 255, 0.3)" /> 
+        <use xlink:href="#wave" x="48" y="7" fill="rgba(153, 204, 255, 0.9)" /> 
+    </g>
+    </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
