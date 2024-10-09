@@ -1,6 +1,6 @@
 # Water Jug Problem Solver - Documentation (Front)
 
-This code provides a web-based solution to the water jug problem. Users can input the capacities of two jugs and a target amount of water to measure. The solution steps are calculated through an API, and the steps are displayed visually with animations that simulate the filling, transferring, and emptying of the jugs.
+This code provides a responsive web-based solution to the water jug problem. Users can input the capacities of two jugs and a target amount of water to measure. The solution steps are calculated through an API, and the steps are displayed visually with animations that simulate the filling, transferring, and emptying of the jugs.
 
 ## Overview
 
@@ -83,9 +83,32 @@ Error Handling: If the API returns an error, the user is informed with a message
 
 - Backend API: The solution relies on an external API to calculate the steps for the water jug problem. Ensure that the API is accessible at ```https://waterjugbackend-production.up.railway.app.```
 
-## Styling and Visual Effects
+# Styling and Visual Effects
 
-- Waves and Parallax Effects: SVGs are used at the bottom of the page for decorative wave effects.
-= Jug Animations: CSS transitions and animations provide visual feedback for each action (fill, empty, transfer).
-= FallingDrops: CSS visual effect of falling water drops to a jug
+### - Body
+  - Centers content and adds a gradient background.
+  - Hides overflow to prevent scrollbars.
+
+### - Container
+  - Card-like layout with rounded corners, shadow, and a semi-transparent background.
+  - Limits width and height for responsiveness; adds scrollbars as needed.
+  - Customizes scrollbar appearance.
+
+### - Inputs & Buttons
+  - Inputs: Rounded, with subtle shadow and transition effects.
+  - Buttons: Gradient background with hover effect, making it interactive.
+
+### - Jugs & Water Effects
+  - Layout: Flexbox for responsiveness and spacing between jugs.
+  - Jug Style: Solid borders, gradient background, and shadow for a 3D look.
+  - Water Level: Dynamic height for simulating fill level.
+  - Stream: Used for transferring water with animated opacity and rotation.
+
+### - Wave Footer
+  - Fixed at the bottom with a parallax animation for a moving wave effect. SVGs are used at the bottom of the page for decorative wave effects.
+
+### - Responsive Design
+The media queries in the provided CSS code are designed to adapt the layout for screens with a width of 768 pixels or less.
+
+
 
