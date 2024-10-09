@@ -32,19 +32,20 @@ https://maferrep.github.io/WaterJug.github.io/
 - Purpose: Handles form submission, preventing default behavior and initiating the solution process.
 
 - Process:
-1. Retrieves the values for x, y, and z from the form.
-2. Calls resetState() to clear previous results and reset the jugs.
-3. Sends a POST request to the backend API with the input values.
-4. If the response contains steps, it calls displayResult() to show them. Otherwise, it displays an error message.
+   1. Retrieves the values for ```x, y,``` and ```z``` from the form.
+   2. Calls ```resetState()``` to clear previous results and reset the jugs.
+   3. Sends a ```POST``` request to the backend API with the input values.
+   4. If the response contains steps, it calls displayResult() to show them. Otherwise, it displays an error message.
 
 ### 2. ```resetState()```
 ```function resetState() { ... }```
 
 - Purpose: Resets the jugs and clears any previous solution steps.
+- 
 - Process:
-1. Resets the water levels in both jugs to zero.
-2. Removes any animation classes from the jugs.
-3. Clears the solution steps displayed on the screen.
+   1. Resets the water levels in both jugs to zero.
+   2. Removes any animation classes from the jugs.
+   3. Clears the solution steps displayed on the screen.
 
 ### 3. ```updateJug(jugElement, percent)```
 ```function updateJug(jugElement, percent) { ... }```
@@ -59,14 +60,16 @@ https://maferrep.github.io/WaterJug.github.io/
 ```function displayResult(steps, x, y) { ... }```
 
 - Purpose: Animates the solution steps in sequence.
+- 
 - Parameters:
     - ```steps```: An array of actions returned by the API.
     - ```x```: Capacity of Jug A.
     - ```y```: Capacity of Jug B.
+    - 
 - Process:
-1. Iterates through the steps, displaying each action with a short delay.
-2. For each step, adds appropriate animations (e.g., filling, emptying, transferring) to the jugs.
-3. Updates the water level for each jug based on the current action.
+   1. Iterates through the steps, displaying each action with a short delay.
+   2. For each step, adds appropriate animations (e.g., filling, emptying, transferring) to the jugs.
+   3. Updates the water level for each jug based on the current action.
 
 ### 5. ```addFallingDrops(jugElement)```
 ```function addFallingDrops(jugElement) { ... }```
