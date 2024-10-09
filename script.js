@@ -7,7 +7,7 @@ document.getElementById('waterJugForm').addEventListener('submit', function(even
   
     resetState();
   
-    fetch('http://localhost:3000/api/waterjug', {
+    fetch('https://waterjugbackend-production.up.railway.app/api/v1/waterjug/solve', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ x, y, z })
