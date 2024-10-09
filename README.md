@@ -2,6 +2,7 @@
 
 This code provides a responsive web-based solution to the water jug problem. Users can input the capacities of two jugs and a target amount of water to measure. The solution steps are calculated through an API, and the steps are displayed visually with animations that simulate the filling, transferring, and emptying of the jugs.
 
+## Live demo 
 https://maferrep.github.io/WaterJug.github.io/
 
 ## Overview
